@@ -13,11 +13,11 @@ import static com.codeborne.selenide.Selenide.open;
 class SpringbootDemoApplicationTests {
 	@Test
 	void contextLoads() {
-		System.out.println("how are you");
-		System.setProperty("webdriver.chrome.driver", "chromedriver");
-		open("https://google.com/ncr");
-
-		$(By.name("q")).val("selenide").pressEnter();
+//		System.out.println("how are you");
+//		System.setProperty("webdriver.chrome.driver", "chromedriver");
+//		open("https://google.com/ncr");
+//
+//		$(By.name("q")).val("selenide").pressEnter();
 //		new GooglePage().searchFor("selenide");
 //
 //		SearchResultsPage results = new SearchResultsPage();
