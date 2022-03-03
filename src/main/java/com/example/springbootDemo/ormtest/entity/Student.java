@@ -3,6 +3,7 @@ package com.example.springbootDemo.ormtest.entity;
 import com.example.springbootDemo.ormtest.annotation.Column;
 import com.example.springbootDemo.ormtest.annotation.Table;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Table(tableName = "GCCARMP")
@@ -17,6 +18,29 @@ public class Student {
     @Column(columnName = "birth_date")
     public Date birthDate;
 
+    @Column(columnName = "POINT")
+    public BigDecimal point;
+
+    @Column(columnName = "NUM")
+    public float num;
+
+
+
+    public BigDecimal getPoint() {
+        return point;
+    }
+
+    public void setPoint(BigDecimal point) {
+        this.point = point;
+    }
+
+    public float getNum() {
+        return num;
+    }
+
+    public void setNum(float num) {
+        this.num = num;
+    }
 
     public String getName() {
         return name;

@@ -29,6 +29,8 @@ public class OrmTest {
             Column column=(Column)field.getAnnotation(Column.class);//Getting annotation information
             System.out.println(column.columnName());
             System.out.println(field.get(stu));
+            System.out.println(field.getType());
+            System.out.println(field.getType().getName());
            }
        }
     }
